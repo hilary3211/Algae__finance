@@ -21,8 +21,8 @@ let Owner_Address = process.env.OWNERADDRESS; //Enter the owner's account addres
 
 const rate = 10; //Daily ROI.
 
-app.set('view engine', 'ejs');
-
+// app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 ///////////// English
 app.get('/', (req, res) => {
     res.render('index.ejs', {CTAdress : contractAddress, refid : Owner_Address, rate : rate, owner : Owner_Address});
