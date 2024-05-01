@@ -22,14 +22,26 @@ let Owner_Address = process.env.OWNERADDRESS; //Enter the owner's account addres
 const rate = 10; //Daily ROI.
 
 // app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
+// ///////////// English
+// app.get('/', (req, res) => {
+//     res.render('index.ejs', {CTAdress : contractAddress, refid : Owner_Address, rate : rate, owner : Owner_Address});
+// });
+// app.get('/refer/:RefAdd', async function(req, res) {
+//     res.render('index.ejs', {CTAdress : contractAddress, refid : req.params.RefAdd, rate : rate, owner : Owner_Address});
+// });
+
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-///////////// English
+
 app.get('/', (req, res) => {
-    res.render('index.ejs', {CTAdress : contractAddress, refid : Owner_Address, rate : rate, owner : Owner_Address});
+    res.render('index', { CTAddress: contractAddress, refid: ownerAddress, rate: rate, owner: ownerAddress });
 });
-app.get('/refer/:RefAdd', async function(req, res) {
-    res.render('index.ejs', {CTAdress : contractAddress, refid : req.params.RefAdd, rate : rate, owner : Owner_Address});
+
+app.get('/refer/:RefAdd', (req, res) => {
+    res.render('index', { CTAddress: contractAddress, refid: req.params.RefAdd, rate: rate, owner: ownerAddress });
 });
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
