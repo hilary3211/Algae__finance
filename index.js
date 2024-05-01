@@ -13,26 +13,16 @@ const HttpProvider = TronWeb.providers.HttpProvider;
 const fullNode = new HttpProvider("https://api.nile.trongrid.io");
 const solidityNode = new HttpProvider("https://api.nile.trongrid.io");
 const eventServer = new HttpProvider("https://api.nile.trongrid.io");
-// const privateKey = '6827f8311ceb88b527e8e92b15707a62cbfbbbe1e2e86f2396378d4f3bba6d22'
+
 const privateKey = process.env.PRIVATEKEY; 
 const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey);
 
-// let contractAddress = 'TBYPFtWDneaGXPsBxK5NR3GgEEZfqyhoVh'
-// let ownerAddress = 'TKLBAcPyyctM8cL5ysRo7zVgNtarQh9Hyt'
-let contractAddress = process.env.CONTRACTADDRESS //Enter your smart contract address.
+
+let contractAddress = process.env.CONTRACTADDRESS 
 
 let Owner_Address = process.env.OWNERADDRESS;
 const rate = 10; //Daily ROI.
 
-// app.set('view engine', 'ejs');
-// app.set('view engine', 'ejs');
-// ///////////// English
-// app.get('/', (req, res) => {
-//     res.render('index.ejs', {CTAdress : contractAddress, refid : Owner_Address, rate : rate, owner : Owner_Address});
-// });
-// app.get('/refer/:RefAdd', async function(req, res) {
-//     res.render('index.ejs', {CTAdress : contractAddress, refid : req.params.RefAdd, rate : rate, owner : Owner_Address});
-// });
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
