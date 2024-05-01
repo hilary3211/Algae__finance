@@ -1,4 +1,4 @@
-# Crocodile Finance
+# Algae Finance
 
 This a Ponzi DApp I created on Tron blockchain using NodeJS.
 
