@@ -23,7 +23,7 @@ OWNERADDRESS='Your_Own_Wallet_Address'
 
 4- Run `node index.js` and you should get the app perfectly running on port 3000.
 
-5- The DApp uses the Nile Testnet by default. In order to use the Mainnet replace `https://api.nile.trongrid.io` with `https://api.trongrid.io` lines 12,13,14 of crocodile.js file.
+5- The DApp uses the Nile Testnet by default. In order to use the Mainnet replace `https://api.nile.trongrid.io` with `https://api.trongrid.io` lines 12,13,14 of index.js file.
 
 # Going Live!
 June 10, 2021
