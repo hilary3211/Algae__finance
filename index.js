@@ -13,12 +13,11 @@ const HttpProvider = TronWeb.providers.HttpProvider;
 const fullNode = new HttpProvider("https://api.nile.trongrid.io");
 const solidityNode = new HttpProvider("https://api.nile.trongrid.io");
 const eventServer = new HttpProvider("https://api.nile.trongrid.io");
-const privateKey = process.env.PRIVATEKEY; //Enter a Tron wallet private key.
+const privateKey = '6827f8311ceb88b527e8e92b15707a62cbfbbbe1e2e86f2396378d4f3bba6d22'
 const tronWeb = new TronWeb(fullNode,solidityNode,eventServer,privateKey);
 
-let contractAddress = process.env.CONTRACTADDRESS //Enter your smart contract address.
-
-let Owner_Address = process.env.OWNERADDRESS; //Enter the owner's account address.
+let contractAddress = 'TBYPFtWDneaGXPsBxK5NR3GgEEZfqyhoVh'
+let Owner_Address = 'TKLBAcPyyctM8cL5ysRo7zVgNtarQh9Hyt'
 
 const rate = 10; //Daily ROI.
 
