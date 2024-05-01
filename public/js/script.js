@@ -47,7 +47,7 @@ if (failure_count == 12) {
     }
     });
 }
-}, 250);
+}, 250)
 
 async function load_contract_details(){
     let instance = await tronWeb.contract().at(CTA);
@@ -277,6 +277,6 @@ async function withdraw(){
   });
 }
 function en(){if(owner == RefID){window.location.href = "/";}else{window.location.href = "/refer/" + RefID;}}
-function ru(){if(owner == RefID){window.location.href = "/ru";}else{window.location.href = "/ru/refer/" + RefID;}}
-function se(){if(owner == RefID){window.location.href = "/se";}else{window.location.href = "/se/refer/" + RefID;}}
-function zh(){if(owner == RefID){window.location.href = "/zh";}else{window.location.href = "/zh/refer/" + RefID;}}
+// function ru(){if(owner == RefID){window.location.href = "/ru";}else{window.location.href = "/ru/refer/" + RefID;}}
+// function se(){if(owner == RefID){window.location.href = "/se";}else{window.location.href = "/se/refer/" + RefID;}}
+// function zh(){if(owner == RefID){window.location.href = "/zh";}else{window.location.href = "/zh/refer/" + RefID;}}

@@ -30,26 +30,6 @@ app.get('/', (req, res) => {
 app.get('/refer/:RefAdd', async function(req, res) {
     res.render('index.ejs', {CTAdress : contractAddress, refid : req.params.RefAdd, rate : rate, owner : Owner_Address});
 });
-///////////// Russian
-app.get('/ru', async function(req, res) {
-    res.render('indexru.ejs', {CTAdress : contractAddress, refid : Owner_Address, rate : rate, owner : Owner_Address});
-});
-app.get('/ru/refer/:RefAdd', async function(req, res) {
-    res.render('indexru.ejs', {CTAdress : contractAddress, refid : req.params.RefAdd, rate : rate, owner : Owner_Address});
-});
-///////////// Chinese
-app.get('/zh', async function(req, res) {
-    res.render('indexzh.ejs', {CTAdress : contractAddress, refid : Owner_Address, rate : rate, owner : Owner_Address});
-});
-app.get('/zh/refer/:RefAdd', async function(req, res) {
-    res.render('indexzh.ejs', {CTAdress : contractAddress, refid : req.params.RefAdd, rate : rate, owner : Owner_Address});
-});
-///////////// Spanish
-app.get('/se', async function(req, res) {
-    res.render('indexes.ejs', {CTAdress : contractAddress, refid : Owner_Address, rate : rate, owner : Owner_Address});
-});
-app.get('/se/refer/:RefAdd', async function(req, res) {
-    res.render('indexes.ejs', {CTAdress : contractAddress, refid : req.params.RefAdd, rate : rate, owner : Owner_Address});
-});
+
 
 app.listen("3000");
