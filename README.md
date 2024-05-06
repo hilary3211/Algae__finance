@@ -25,6 +25,4 @@ OWNERADDRESS='Your_Own_Wallet_Address'
 
 5- The DApp uses the Nile Testnet by default. In order to use the Mainnet replace `https://api.nile.trongrid.io` with `https://api.trongrid.io` lines 12,13,14 of index.js file.
 
-# Going Live!
-June 10, 2021
-  I set the repo open to the public. Feel free to modify the code and if you had any suggestions please let me know. 
+
